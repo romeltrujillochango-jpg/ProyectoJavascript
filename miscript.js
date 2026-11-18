@@ -35,8 +35,21 @@ function agregar(){
     document.getElementById("div1").innerHTML = "Hola <input type='text'>";
 }
 function aumentar(){
-    document.getElementById("div")
+   document.getElementById("div1").append("Hola <br>");
 }
+
+function aumentar_con_html (){ //permite aumentar utilizando innerHTML
+    document.getElementById("div1").innerHTML += "Hola <input type='text'><br>";
+}
+
+function vaciar (){ //vaciar el div
+    document.getElementById("div1").innerHTML = "";
+}
+
+function eliminar (){ //elimina todo el div
+    document.getElementById("div1").remove();
+}
+
 
 document.getElementById("btn_cambiar_fondo").addEventListener("click", function(){
     document.getElementById("midiv").style.backgroundColor = "green";
