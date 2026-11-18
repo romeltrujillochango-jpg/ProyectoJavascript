@@ -38,15 +38,15 @@ function aumentar(){
    document.getElementById("div1").append("Hola <br>");
 }
 
-function aumentar_con_html (){ //permite aumentar utilizando innerHTML
+function aumentar_con_html (){ //utilizando innerHTML
     document.getElementById("div1").innerHTML += "Hola <input type='text'><br>";
 }
 
-function vaciar (){ //vaciar el div
+function vaciar (){ //el div
     document.getElementById("div1").innerHTML = "";
 }
 
-function eliminar (){ //elimina todo el div
+function eliminar (){ //todo el div
     document.getElementById("div1").remove();
 }
 
